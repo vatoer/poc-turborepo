@@ -1,0 +1,25 @@
+{
+  "name": "smartppdb-2025",
+  "version": "0.0.0",
+  "private": true,
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "db:migrate:deploy": "turbo run db:migrate:deploy",
+    "db:push": "turbo run db:push",
+    "db:seed": "turbo run db:seed",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "prisma": "^6.1.0",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@9.7.0",
+  "dependencies": {
+    "@prisma/client": "^6.1.0"
+  }
+}
